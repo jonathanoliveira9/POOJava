@@ -10,4 +10,12 @@ public class Customer {
     boolean canBuyTickets() {
         return true;
     }
+
+    void setAddress(String address) {
+        this.address = address;
+    }
+
+    String getAddress() {
+        return address;
+    }
 }
