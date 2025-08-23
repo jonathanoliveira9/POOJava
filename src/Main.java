@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        Seller seller = new Seller();
+        Seller seller = new Seller(0.0);
         Customer customer = new Customer();
         System.out.println(customer.canBuyTickets());
         customer.setAddress("O'Connell Street");
@@ -13,10 +13,10 @@ public class Main {
         System.out.println(customer.getAddress());
 
         System.out.println("Giving money to seller 50.0 dollars");
-        seller.receiveMoney(50.0);
+        seller.setMoney(50.0);
         System.out.println("Seller has " + seller.showsSalary() + "dollars");
         System.out.println("Giving money to seller 1456.1 dollars");
-        seller.receiveMoney(1456.1);
+        seller.setMoney(1456.1);
         System.out.println("Seller has " + seller.showsSalary() + "dollars");
     }
 }
