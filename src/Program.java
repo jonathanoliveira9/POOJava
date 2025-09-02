@@ -7,16 +7,18 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        Product product = new Product();
+     
 
         System.out.println("Give a name to product");
-        product.name = sc.nextLine();
+        String name = sc.nextLine();
 
         System.out.println("Set a quantity to product");
-        product.quantity = sc.nextInt();
+        int quantity = sc.nextInt();
 
         System.out.println("Set a value to product");
-        product.price = sc.nextDouble();
+        double price = sc.nextDouble();
+
+        Product product = new Product(name, price, quantity);
 
         System.out.println("Product: data " + product);
 
